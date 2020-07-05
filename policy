@@ -1,0 +1,7 @@
+# Define features & feature groups
+# Actual permissions will be specified in database -> configurable on admin
+
+p, admin, admin, write
+
+
+g, eldon, admin

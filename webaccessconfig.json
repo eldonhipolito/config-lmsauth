@@ -1,0 +1,24 @@
+{
+"policies" :[
+	{
+		"path": "authn/identity",
+		"method": "GET",
+		"allowed": {
+			"feature": "users",
+			"action": "read"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "authn/identity",
+		"method": "GET",
+		"allowed": {
+			"feature": "users",
+			"action": "read"
+		},
+		"passThrough": true
+	}
+
+]
+}
+	

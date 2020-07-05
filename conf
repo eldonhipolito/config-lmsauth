@@ -1,0 +1,14 @@
+[request_definition]
+r = user_id, feature, action
+
+[policy_definition]
+p = user_id, feature, action
+
+[role_definition]
+g = _, _
+
+[policy_effect]
+e = some(where (p.eft == allow))
+
+[matchers]
+m = p.user_id == r.user_id && ((g(p.feature, r.feature) || (p.feature == r.feature)) && (p.action == r.action || p.action == 'edit' && r.action == 'view') || p.feature == 'admin')
