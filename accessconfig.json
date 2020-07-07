@@ -1,0 +1,157 @@
+{
+"policies" : [
+	{
+		"path": "authn/identity",
+		"method": "GET",
+		"allowed": {
+			"feature": "users",
+			"action": "read"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "authz/policies",
+		"method": "POST",
+		"allowed": {
+			"feature": "policy",
+			"action": "write"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "authz/policies",
+		"method": "GET",
+		"allowed": {
+			"feature": "policy",
+			"action": "read"
+		}
+	},
+	{
+		"path": "authz/policies/.+",
+		"method": "DELETE",
+		"allowed": {
+			"feature": "policy",
+			"action": "write"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/courses",
+		"method": "GET",
+		"allowed": {
+			"feature": "courses",
+			"action": "read"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/courses",
+		"method": "POST",
+		"allowed": {
+			"feature": "courses",
+			"action": "write"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/courses/.+",
+		"method": "GET",
+		"allowed": {
+			"feature": "courses",
+			"action": "read"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/courses/.+",
+		"method": "POST",
+		"allowed": {
+			"feature": "courses",
+			"action": "write"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/courses/.+/status",
+		"method": "POST",
+		"allowed": {
+			"feature": "courses",
+			"action": "write"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/users",
+		"method": "GET",
+		"allowed": {
+			"feature": "users",
+			"action": "read"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/users/.+",
+		"method": "PATCH",
+		"allowed": {
+			"feature": "users",
+			"action": "write"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/users/.+/status",
+		"method": "PATCH",
+		"allowed": {
+			"feature": "users",
+			"action": "write"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/tracks",
+		"method": "GET",
+		"allowed": {
+			"feature": "tracks",
+			"action": "read"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/tracks",
+		"method": "POST",
+		"allowed": {
+			"feature": "tracks",
+			"action": "write"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/tracks/.+",
+		"method": "GET",
+		"allowed": {
+			"feature": "tracks",
+			"action": "read"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/tracks/.+",
+		"method": "PATCH",
+		"allowed": {
+			"feature": "tracks",
+			"action": "write"
+		},
+		"passThrough": true
+	},
+	{
+		"path": "/tracks/.+/status",
+		"method": "PATCH",
+		"allowed": {
+			"feature": "tracks",
+			"action": "write"
+		},
+		"passThrough": true
+	}
+]
+
+}
